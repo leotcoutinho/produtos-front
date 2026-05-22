@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Input from "./components/Input";
-import Button from "./components/Button";
-import Detalhes from "./components/Detalhes";
-import { useProdutos } from "../../hooks/useProdutos";
-import type { Produto } from "../../types/Produto";
+import Input from "./Input";
+import Button from "./Button";
+import Detalhes from "./Detalhes";
+import { useProdutos } from "../../../hooks/useProdutos";
+import type { Produto } from "../../../types/Produto";
 
 function FormularioProduto() {
   const [form, setForm] = useState<Produto>({ id: 0, nome: "", valor: 0 });
